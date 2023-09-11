@@ -1,0 +1,10 @@
+# In this .txt I'm placing all colors we are going to use for eco-store website.
+
+Primary-color: #FFEEF4;
+Secondary-color: #E4E4D0;
+Tertiary-color: #AEC3AE;
+Primary-text-color: #94A684;
+
+# Left ones.
+first: #A8DF8E;
+second: #EAC696;
