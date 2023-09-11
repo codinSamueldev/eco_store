@@ -1,3 +1,4 @@
+/* Variable declaration. */
 $primary-color: #FFEEF4;
 $secondary-color: #E4E4D0;
 $tertiary-color: #AEC3AE;
@@ -7,4 +8,29 @@ $font: 'Oswald', sans-serif;
 body{
     margin: 0;
     padding: 0;
+    background-color: $primary-color;
+    font-family: $font;
+}
+
+nav{
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-text-color;
+    /* Here we are using nesting in SASS. */
+    p{
+        font-size: 2.2rem;
+        padding-left: 1.5rem;
+    }
+
+    .icons{
+        display: flex;
+        gap: 0.3rem;
+
+        button{
+            background: none;
+            border-style: none;
+        }
+    }
 }
