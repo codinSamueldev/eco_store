@@ -44,7 +44,7 @@ article p {
   font-size: 1.2rem;
 }
 article button {
-  width: 12vw;
+  width: 16vw;
   padding: 0.5rem;
   background: #fa9500;
   border-style: none;
@@ -54,6 +54,27 @@ article button {
 article img {
   width: 25vw;
   border-radius: 5%;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+section .card-section {
+  padding: 1rem;
+}
+section h2 {
+  padding-left: 1rem;
+  color: #94A684;
+}
+section .product-card {
+  width: 35vw;
+  height: auto;
+  background-color: #E4E4D0;
+}
+section .product-card img {
+  width: 100px;
+  height: 100px;
 }
 
 footer {

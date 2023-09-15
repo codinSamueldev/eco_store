@@ -52,7 +52,7 @@ article{
         font-size: 1.2rem;
     }
     button{
-        width: 12vw;
+        width: 16vw;
         padding: 0.5rem;
         background: $quaternary-color;
         border-style: none;
@@ -62,6 +62,30 @@ article{
     img{
         width: 25vw;
         border-radius: 5%;
+    }
+}
+
+section{
+    width: 100%;
+    height: auto;
+
+    .card-section{
+    padding: 1rem;
+    }
+
+    h2{
+        padding-left: 1rem;
+        color: $primary-text-color;
+    }
+
+    .product-card{
+        width: 35vw;
+        height: auto;
+        background-color: $secondary-color;
+        img{
+            width: 100px;
+            height: 100px;
+        }
     }
 }
 
