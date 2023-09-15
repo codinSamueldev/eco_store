@@ -2,6 +2,7 @@
 $primary-color: #FFEEF4;
 $secondary-color: #E4E4D0;
 $tertiary-color: #AEC3AE;
+$quaternary-color: #fa9500;
 $primary-text-color: #94A684;
 $font: 'Oswald', sans-serif;
 
@@ -20,8 +21,8 @@ nav{
     color: $primary-text-color;
     /* Here we are using nesting in SASS. */
     p{
-        font-size: 2.2rem;
-        padding-left: 1.5rem;
+        font-size: 2rem;
+        padding-left: 1.1rem;
     }
 
     .icons{
@@ -33,4 +34,40 @@ nav{
             border-style: none;
         }
     }
+}
+
+article{
+    width: auto;
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    color: $primary-text-color;
+    h1{
+        padding: 0;
+        margin: 0;
+        font-size: 3rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+    button{
+        width: 12vw;
+        padding: 0.5rem;
+        background: $quaternary-color;
+        border-style: none;
+        border-radius: 15px;
+        color: #fff;
+    }
+    img{
+        width: 25vw;
+        border-radius: 5%;
+    }
+}
+
+
+footer{
+    background: $quaternary-color;
+    width: 100%;
+    height: 15rem;
 }
