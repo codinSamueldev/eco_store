@@ -3,12 +3,14 @@ $primary-color: #FFEEF4;
 $secondary-color: #E4E4D0;
 $tertiary-color: #AEC3AE;
 $quaternary-color: #fa9500;
+$white-color: #fff;
 $primary-text-color: #94A684;
 $font: 'Oswald', sans-serif;
 
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: $primary-color;
     font-family: $font;
 }
@@ -54,10 +56,11 @@ article{
     button{
         width: 16vw;
         padding: 0.5rem;
+        margin: 2rem 0;
         background: $quaternary-color;
         border-style: none;
         border-radius: 15px;
-        color: #fff;
+        color: $white-color;
     }
     img{
         width: 25vw;
@@ -68,23 +71,54 @@ article{
 section{
     width: 100%;
     height: auto;
-
-    .card-section{
-    padding: 1rem;
-    }
-
     h2{
+        display: flex;
+        justify-content: center;
         padding-left: 1rem;
         color: $primary-text-color;
     }
-
-    .product-card{
-        width: 35vw;
-        height: auto;
-        background-color: $secondary-color;
-        img{
-            width: 100px;
-            height: 100px;
+    .healthcare{
+        margin-bottom: 5rem;
+        .card-section{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+        }
+        .product-card{
+            width: 35vw;
+            height: auto;
+            background-color: $secondary-color;
+            color: $primary-text-color;
+            padding: 0.5rem;
+            border-radius: 8px;
+            .icon{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-bottom: 0.5rem;
+            }
+            .product-image{
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 90%;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    /* Using inheritance SCSS */
+    .furniture{
+        @extend .healthcare;
+        .product-card{
+            background: $tertiary-color;
+            color: $white-color;
         }
     }
 }
