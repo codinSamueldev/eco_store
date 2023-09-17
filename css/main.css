@@ -102,8 +102,11 @@ section .healthcare .product-card .product-image, section .furniture .product-ca
   justify-content: center;
 }
 section .healthcare .product-card .product-image img, section .furniture .product-card .product-image img {
-  width: 90%;
+  width: 80%;
+  height: 15rem;
   border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section .furniture .product-card {
   background: #AEC3AE;
