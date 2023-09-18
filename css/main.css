@@ -11,7 +11,12 @@ nav {
   width: 100%;
   padding: 0.3rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  /* Implementation of mixins. */
+  /* display: flex;
+  justify-content: space-between; */
   color: #94A684;
   /* Here we are using nesting in SASS. */
 }
@@ -33,7 +38,11 @@ article {
   padding-left: 2rem;
   padding-right: 1.5rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  /* display: flex;
+  justify-content: space-between; */
   color: #94A684;
 }
 article h1 {
@@ -113,6 +122,20 @@ section .furniture .product-card {
   color: #fff;
 }
 
+.about-us .mission {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin: 1rem;
+  color: #e86424;
+}
+.about-us .mission .earth, .about-us .mission .innovation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem;
+}
 footer {
   background: #fa9500;
   width: 100%;

@@ -7,6 +7,13 @@ $white-color: #fff;
 $primary-text-color: #94A684;
 $font: 'Oswald', sans-serif;
 
+@mixin flex($direction, $content, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -18,8 +25,9 @@ body{
 nav{
     width: 100%;
     padding: 0.3rem;
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, center); /* Implementation of mixins. */
+    /* display: flex;
+    justify-content: space-between; */
     color: $primary-text-color;
     /* Here we are using nesting in SASS. */
     p{
@@ -42,8 +50,9 @@ article{
     width: auto;
     padding-left: 2rem;
     padding-right: 1.5rem;
-    display: flex;
-    justify-content: space-between;
+    @include flex(row, space-between, center );
+    /* display: flex;
+    justify-content: space-between; */
     color: $primary-text-color;
     h1{
         padding: 0;
@@ -125,6 +134,25 @@ section{
     }
 }
 
+.about-us{
+    .mission{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin: 1rem;
+        color: #e86424;
+        .earth{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.6rem
+        }
+    }
+    .innovation{
+        @extend .earth;
+    }
+}
 
 footer{
     background: $quaternary-color;
