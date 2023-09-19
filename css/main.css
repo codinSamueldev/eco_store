@@ -175,7 +175,20 @@ section .furniture .product-card {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 0.6rem;
   background: #fa9500;
-  width: 100%;
-  height: 15rem;
+  color: #fff;
+}
+footer .social-icons a {
+  text-decoration: none;
+}
+footer .social-icons i {
+  margin: 0.3rem;
+  font-size: 1.7rem;
 }/*# sourceMappingURL=main.css.map */
