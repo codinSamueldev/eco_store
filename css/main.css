@@ -62,6 +62,10 @@ article button {
   border-radius: 15px;
   color: #fff;
 }
+article button:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
 article img {
   width: 25vw;
   border-radius: 5%;
@@ -136,6 +140,25 @@ section .furniture .product-card {
   gap: 1rem;
   padding: 0.6rem;
 }
+.gallery h2 {
+  padding-bottom: 3rem;
+}
+.gallery .gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.gallery .gallery-images img {
+  width: 40vw;
+  box-sizing: border-box;
+  border-radius: 1rem;
+}
+.gallery .gallery-images img:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
 footer {
   background: #fa9500;
   width: 100%;
