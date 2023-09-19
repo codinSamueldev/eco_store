@@ -171,10 +171,24 @@ section{
             width: 40vw;
             box-sizing: border-box;
             border-radius: 1rem;
+            border: 0.23rem solid #BABD8D;
             &:hover{
                 transform: scale(1.1);
                 transition-duration: 0.2s;
             }
+        }
+    }
+}
+
+.location{
+    @include flex(column, center, center);
+    flex-wrap: wrap;
+    color: #e86424;
+    padding: 2rem 0;
+    .map{
+        img{
+            width: 90vw;
+            border-radius: 0.09rem;
         }
     }
 }
